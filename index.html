@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>web_gift — интерактивные сайты-открытки на заказ</title>
+  <meta name="description" content="Персональная веб-страница-открытка по одной ссылке: музыка, фото и интерактив, который открывается на любом телефоне. Изготовление за 1 час." />
+  <meta name="theme-color" content="#0f1115" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true">
+    <span class="orb orb--violet"></span>
+    <span class="orb orb--pink"></span>
+    <span class="orb orb--violet orb--low"></span>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="web_gift — на главную">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text">web<span class="logo__accent">_gift</span></span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="#catalog">Шаблоны</a>
+        <a class="nav__link" href="#builder">Конструктор</a>
+      </nav>
+      <a class="btn btn--ghost btn--sm" href="#builder">Заказать</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge badge--glow">
+            <span class="badge__spark" aria-hidden="true">✨</span>
+            Цифровой подарок за 1 час
+          </span>
+
+          <h1 class="hero__title">
+            Интерактивные сайты-открытки,<br />
+            <span class="gradient-text">которые запоминаются</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Персональная веб-страница по одной ссылке: музыка, фото и интерактив,
+            который открывается на любом телефоне. Без приложений и регистраций —
+            просто отправьте ссылку.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#catalog" id="heroCta">
+              Выбрать шаблон
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+            <div class="hero__note">
+              <span class="hero__stars" aria-hidden="true">★★★★★</span>
+              <span>Уже 40+ открыток подарено</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="float-card float-card--main">
+            <div class="float-card__screen">
+              <span class="float-card__eyebrow">Для мамы</span>
+              <strong class="float-card__title">С днём рождения,<br />родная ♥</strong>
+              <div class="float-card__dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="float-card__bar">
+              <span class="float-card__play">▶</span>
+              <span class="float-card__wave"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+          </div>
+
+          <div class="float-card float-card--chip float-card--one">
+            <span class="float-card__emoji">🎂</span>
+            <span>Задуй свечи</span>
+          </div>
+          <div class="float-card float-card--chip float-card--two">
+            <span class="float-card__emoji">💌</span>
+            <span>Купоны желаний</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>открытка по ссылке</span><span class="marquee__dot">✦</span>
+          <span>музыка и фото</span><span class="marquee__dot">✦</span>
+          <span>интерактив</span><span class="marquee__dot">✦</span>
+          <span>готово за 1 час</span><span class="marquee__dot">✦</span>
+          <span>открытка по ссылке</span><span class="marquee__dot">✦</span>
+          <span>музыка и фото</span><span class="marquee__dot">✦</span>
+          <span>интерактив</span><span class="marquee__dot">✦</span>
+          <span>готово за 1 час</span><span class="marquee__dot">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Каталог</span>
+          <h2 class="section__title">Выберите настроение подарка</h2>
+          <p class="section__subtitle">
+            Три готовых сценария с продуманными анимациями. Всё можно адаптировать:
+            имена, тексты, фото и музыку.
+          </p>
+        </div>
+
+        <div class="cards">
+          <!-- Card 1 -->
+          <article class="card card--hit reveal">
+            <div class="card__preview card__preview--warm">
+              <span class="tag tag--hit">Хит продаж</span>
+              <div class="preview-ui">
+                <span class="preview-ui__small">С днём рождения</span>
+                <span class="preview-ui__big">Мама</span>
+                <div class="preview-ui__candles" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="preview-ui__cta">Задуть свечи 🎤</span>
+              </div>
+              <span class="preview-spark preview-spark--a" aria-hidden="true">🎈</span>
+              <span class="preview-spark preview-spark--b" aria-hidden="true">🎉</span>
+            </div>
+
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">Тёплый праздник</h3>
+                <span class="card__price">500 ₽</span>
+              </div>
+              <p class="card__text">
+                Для мамы и близких: нежные анимации, карточки-комплименты и торт,
+                свечи на котором можно задуть через микрофон.
+              </p>
+              <div class="card__actions">
+                <a class="btn btn--ghost" href="https://lihtenberg1337-dotcom.github.io/pozdravlenie/"
+                   target="_blank" rel="noopener noreferrer">Смотреть демо</a>
+                <button class="btn btn--soft" type="button" data-choose="500">Выбрать</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card reveal">
+            <div class="card__preview card__preview--love">
+              <span class="tag tag--love">Для пары</span>
+              <div class="preview-ui">
+                <span class="preview-ui__small">Только для тебя</span>
+                <span class="preview-ui__big">Открыть письмо</span>
+                <div class="preview-ui__timer" aria-hidden="true">128 дней вместе</div>
+                <span class="preview-ui__cta">Купоны желаний</span>
+              </div>
+              <span class="preview-spark preview-spark--a" aria-hidden="true">💗</span>
+              <span class="preview-spark preview-spark--b" aria-hidden="true">💌</span>
+            </div>
+
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">Любовь и романтика</h3>
+                <span class="card__price">600 ₽</span>
+              </div>
+              <p class="card__text">
+                Открывающийся конверт с письмом, таймер отношений, купоны на желания
+                и падающие сердечки.
+              </p>
+              <div class="card__actions">
+                <button class="btn btn--ghost" type="button" disabled>Демо скоро</button>
+                <button class="btn btn--soft" type="button" data-choose="600">Выбрать</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card reveal">
+            <div class="card__preview card__preview--fun">
+              <span class="tag tag--fun">С юмором</span>
+              <div class="preview-ui">
+                <span class="preview-ui__small">Сюрприз внутри</span>
+                <span class="preview-ui__big">Нажми на подарок</span>
+                <div class="preview-ui__run" aria-hidden="true">Подарок →</div>
+                <span class="preview-ui__cta">Мини-игра</span>
+              </div>
+              <span class="preview-spark preview-spark--a" aria-hidden="true">🎁</span>
+              <span class="preview-spark preview-spark--b" aria-hidden="true">😂</span>
+            </div>
+
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">Угарный прикол</h3>
+                <span class="card__price">500 ₽</span>
+              </div>
+              <p class="card__text">
+                Для друзей: убегающая кнопка подарка, мини-игра и салют из мемов.
+              </p>
+              <div class="card__actions">
+                <button class="btn btn--ghost" type="button" disabled>Демо скоро</button>
+                <button class="btn btn--soft" type="button" data-choose="500">Выбрать</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILDER -->
+    <section class="section section--builder" id="builder">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Конструктор</span>
+          <h2 class="section__title">Соберите открытку за минуту</h2>
+          <p class="section__subtitle">
+            Опишите, для кого подарок и что написать. Детали, дизайн и оплату
+            согласуем в переписке — обычно это занимает пару сообщений.
+          </p>
+        </div>
+
+        <form class="builder reveal" id="orderForm" novalidate>
+          <div class="builder__grid">
+            <div class="field">
+              <label class="field__label" for="template">Шаблон</label>
+              <div class="select-wrap">
+                <select class="input select" id="template" name="template">
+                  <option value="Тёплый праздник" data-price="500" data-key="warm">Тёплый праздник — 500 ₽</option>
+                  <option value="Любовь и романтика" data-price="600" data-key="love">Любовь и романтика — 600 ₽</option>
+                  <option value="Угарный прикол" data-price="500" data-key="fun">Угарный прикол — 500 ₽</option>
+                  <option value="Своя уникальная идея" data-price="700" data-key="custom">Своя уникальная идея — от 700 ₽</option>
+                </select>
+                <span class="select-wrap__arrow" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="recipient">Для кого открытка и как обратиться?</label>
+              <input class="input" type="text" id="recipient" name="recipient"
+                     placeholder="Например: мама Елена, «мамуля»" required autocomplete="off" />
+            </div>
+
+            <div class="field field--full">
+              <label class="field__label" for="message">Главный текст поздравления</label>
+              <textarea class="input textarea" id="message" name="message" rows="4"
+                        placeholder="Пара тёплых строк: что хотите сказать, за что благодарны, что пожелать"
+                        required></textarea>
+            </div>
+
+            <div class="options field--full" role="group" aria-labelledby="optionsLabel">
+              <span class="field__label" id="optionsLabel">Дополнительные опции</span>
+
+              <label class="option">
+                <input type="checkbox" id="optPhotos" name="photos" data-price="100" />
+                <span class="option__box" aria-hidden="true"></span>
+                <span class="option__text">
+                  Добавить фотогалерею
+                  <span class="option__price">+100 ₽</span>
+                </span>
+              </label>
+
+              <label class="option">
+                <input type="checkbox" id="optMusic" name="music" data-price="100" />
+                <span class="option__box" aria-hidden="true"></span>
+                <span class="option__text">
+                  Добавить фоновую музыку
+                  <span class="option__price">+100 ₽</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="builder__summary">
+            <div class="summary__rows">
+              <div class="summary__row">
+                <span id="templateLine">Шаблон «Тёплый праздник»</span>
+                <span id="templatePrice">500 ₽</span>
+              </div>
+              <div class="summary__row summary__row--extra" id="photosRow" hidden>
+                <span>Фотогалерея</span><span>+100 ₽</span>
+              </div>
+              <div class="summary__row summary__row--extra" id="musicRow" hidden>
+                <span>Фоновая музыка</span><span>+100 ₽</span>
+              </div>
+            </div>
+
+            <div class="summary__total">
+              <div class="summary__total-label">
+                Итого
+                <span class="summary__total-hint">оплата после согласования</span>
+              </div>
+              <div class="summary__total-value" aria-live="polite">
+                <span id="totalPrice">500</span><span class="summary__currency">₽</span>
+              </div>
+            </div>
+
+            <button class="btn btn--primary btn--lg btn--full" type="submit">
+              Оформить заказ во ВКонтакте
+              <span class="btn__arrow" aria-hidden="true">→</span>
+            </button>
+            <p class="builder__hint">
+              Откроется диалог ВКонтакте с готовым сообщением — останется нажать «Отправить».
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">web<span class="logo__accent">_gift</span></span>
+        <p>Персональные веб-открытки вместо открыток, которые теряются.</p>
+      </div>
+      <div class="footer__meta">
+        <a class="footer__link" href="https://vk.me/web_gift" target="_blank" rel="noopener noreferrer">Написать ВКонтакте</a>
+        <span>© <span id="year">2026</span> web_gift</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
