@@ -102,7 +102,7 @@
   document.querySelectorAll("[data-choose]").forEach((button) => {
     button.addEventListener("click", () => {
       const target = Array.from(templateSelect.options).find(
-        (option) => option.dataset.price === button.dataset.choose
+        (option) => option.dataset.key === button.dataset.choose
       );
 
       if (target) {

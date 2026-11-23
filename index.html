@@ -95,14 +95,34 @@
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee__track">
-          <span>открытка по ссылке</span><span class="marquee__dot">✦</span>
-          <span>музыка и фото</span><span class="marquee__dot">✦</span>
-          <span>интерактив</span><span class="marquee__dot">✦</span>
-          <span>готово за 1 час</span><span class="marquee__dot">✦</span>
-          <span>открытка по ссылке</span><span class="marquee__dot">✦</span>
-          <span>музыка и фото</span><span class="marquee__dot">✦</span>
-          <span>интерактив</span><span class="marquee__dot">✦</span>
-          <span>готово за 1 час</span><span class="marquee__dot">✦</span>
+          <div class="marquee__group">
+            <span>Музыка и фото</span><span class="marquee__dot">•</span>
+            <span>Интерактив</span><span class="marquee__dot">•</span>
+            <span>Готово за 1 час</span><span class="marquee__dot">•</span>
+            <span>Открытка по ссылке</span><span class="marquee__dot">•</span>
+            <span>Музыка и фото</span><span class="marquee__dot">•</span>
+            <span>Интерактив</span><span class="marquee__dot">•</span>
+            <span>Готово за 1 час</span><span class="marquee__dot">•</span>
+            <span>Открытка по ссылке</span><span class="marquee__dot">•</span>
+            <span>Музыка и фото</span><span class="marquee__dot">•</span>
+            <span>Интерактив</span><span class="marquee__dot">•</span>
+            <span>Готово за 1 час</span><span class="marquee__dot">•</span>
+            <span>Открытка по ссылке</span><span class="marquee__dot">•</span>
+          </div>
+          <div class="marquee__group">
+            <span>Музыка и фото</span><span class="marquee__dot">•</span>
+            <span>Интерактив</span><span class="marquee__dot">•</span>
+            <span>Готово за 1 час</span><span class="marquee__dot">•</span>
+            <span>Открытка по ссылке</span><span class="marquee__dot">•</span>
+            <span>Музыка и фото</span><span class="marquee__dot">•</span>
+            <span>Интерактив</span><span class="marquee__dot">•</span>
+            <span>Готово за 1 час</span><span class="marquee__dot">•</span>
+            <span>Открытка по ссылке</span><span class="marquee__dot">•</span>
+            <span>Музыка и фото</span><span class="marquee__dot">•</span>
+            <span>Интерактив</span><span class="marquee__dot">•</span>
+            <span>Готово за 1 час</span><span class="marquee__dot">•</span>
+            <span>Открытка по ссылке</span><span class="marquee__dot">•</span>
+          </div>
         </div>
       </div>
     </section>
@@ -139,7 +159,7 @@
             <div class="card__body">
               <div class="card__top">
                 <h3 class="card__title">Тёплый праздник</h3>
-                <span class="card__price">500 ₽</span>
+                <span class="card__price">199 ₽</span>
               </div>
               <p class="card__text">
                 Для мамы и близких: нежные анимации, карточки-комплименты и торт,
@@ -149,7 +169,7 @@
                 <button class="btn btn--ghost" type="button"
                         data-demo="https://lihtenberg1337-dotcom.github.io/pozdravlenie/"
                         data-demo-title="Тёплый праздник">Смотреть демо</button>
-                <button class="btn btn--soft" type="button" data-choose="500">Выбрать</button>
+                <button class="btn btn--soft" type="button" data-choose="warm">Выбрать</button>
               </div>
             </div>
           </article>
@@ -171,7 +191,7 @@
             <div class="card__body">
               <div class="card__top">
                 <h3 class="card__title">Любовь и романтика</h3>
-                <span class="card__price">600 ₽</span>
+                <span class="card__price">249 ₽</span>
               </div>
               <p class="card__text">
                 Открывающийся конверт с письмом, таймер отношений, купоны на желания
@@ -181,7 +201,7 @@
                 <button class="btn btn--ghost" type="button"
                         data-demo="https://lihtenberg1337-dotcom.github.io/love-card/"
                         data-demo-title="Любовь и романтика">Смотреть демо</button>
-                <button class="btn btn--soft" type="button" data-choose="600">Выбрать</button>
+                <button class="btn btn--soft" type="button" data-choose="love">Выбрать</button>
               </div>
             </div>
           </article>
@@ -203,7 +223,7 @@
             <div class="card__body">
               <div class="card__top">
                 <h3 class="card__title">Угарный прикол</h3>
-                <span class="card__price">500 ₽</span>
+                <span class="card__price">199 ₽</span>
               </div>
               <p class="card__text">
                 Для друзей: убегающая кнопка подарка, мини-игра и салют из мемов.
@@ -212,7 +232,7 @@
                 <button class="btn btn--ghost" type="button"
                         data-demo="https://lihtenberg1337-dotcom.github.io/web_prikol/"
                         data-demo-title="Угарный прикол">Смотреть демо</button>
-                <button class="btn btn--soft" type="button" data-choose="500">Выбрать</button>
+                <button class="btn btn--soft" type="button" data-choose="fun">Выбрать</button>
               </div>
             </div>
           </article>
@@ -238,10 +258,10 @@
               <label class="field__label" for="template">Шаблон</label>
               <div class="select-wrap">
                 <select class="input select" id="template" name="template">
-                  <option value="Тёплый праздник" data-price="500" data-key="warm">Тёплый праздник — 500 ₽</option>
-                  <option value="Любовь и романтика" data-price="600" data-key="love">Любовь и романтика — 600 ₽</option>
-                  <option value="Угарный прикол" data-price="500" data-key="fun">Угарный прикол — 500 ₽</option>
-                  <option value="Своя уникальная идея" data-price="700" data-key="custom">Своя уникальная идея — от 700 ₽</option>
+                  <option value="Тёплый праздник" data-price="199" data-key="warm">Тёплый праздник — 199 ₽</option>
+                  <option value="Любовь и романтика" data-price="249" data-key="love">Любовь и романтика — 249 ₽</option>
+                  <option value="Угарный прикол" data-price="199" data-key="fun">Угарный прикол — 199 ₽</option>
+                  <option value="Своя уникальная идея" data-price="349" data-key="custom">Своя уникальная идея — от 349 ₽</option>
                 </select>
                 <span class="select-wrap__arrow" aria-hidden="true"></span>
               </div>
@@ -264,20 +284,20 @@
               <span class="field__label" id="optionsLabel">Дополнительные опции</span>
 
               <label class="option">
-                <input type="checkbox" id="optPhotos" name="photos" data-price="100" />
+                <input type="checkbox" id="optPhotos" name="photos" data-price="49" />
                 <span class="option__box" aria-hidden="true"></span>
                 <span class="option__text">
                   Добавить фотогалерею
-                  <span class="option__price">+100 ₽</span>
+                  <span class="option__price">+49 ₽</span>
                 </span>
               </label>
 
               <label class="option">
-                <input type="checkbox" id="optMusic" name="music" data-price="100" />
+                <input type="checkbox" id="optMusic" name="music" data-price="49" />
                 <span class="option__box" aria-hidden="true"></span>
                 <span class="option__text">
                   Добавить фоновую музыку
-                  <span class="option__price">+100 ₽</span>
+                  <span class="option__price">+49 ₽</span>
                 </span>
               </label>
             </div>
@@ -287,13 +307,13 @@
             <div class="summary__rows">
               <div class="summary__row">
                 <span id="templateLine">Шаблон «Тёплый праздник»</span>
-                <span id="templatePrice">500 ₽</span>
+                <span id="templatePrice">199 ₽</span>
               </div>
               <div class="summary__row summary__row--extra" id="photosRow" hidden>
-                <span>Фотогалерея</span><span>+100 ₽</span>
+                <span>Фотогалерея</span><span>+49 ₽</span>
               </div>
               <div class="summary__row summary__row--extra" id="musicRow" hidden>
-                <span>Фоновая музыка</span><span>+100 ₽</span>
+                <span>Фоновая музыка</span><span>+49 ₽</span>
               </div>
             </div>
 
@@ -303,7 +323,7 @@
                 <span class="summary__total-hint">оплата после согласования</span>
               </div>
               <div class="summary__total-value" aria-live="polite">
-                <span id="totalPrice">500</span><span class="summary__currency">₽</span>
+                <span id="totalPrice">199</span><span class="summary__currency">₽</span>
               </div>
             </div>
 

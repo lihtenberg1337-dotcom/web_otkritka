@@ -581,21 +581,30 @@ main, .header, .footer { position: relative; z-index: 1; }
 .marquee__track {
   display: flex;
   align-items: center;
-  gap: 26px;
   width: max-content;
-  animation: marquee 34s linear infinite;
+  animation: marquee 22s linear infinite;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #6f6b80;
-  padding-left: 26px;
+}
+
+/* Two identical groups sit flush, each with the same trailing space,
+   so translateX(-50%) lands exactly on the start of the duplicate. */
+.marquee__group {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  width: max-content;
+  padding-right: 26px;
 }
 
 .marquee__dot { color: var(--violet); font-size: 10px; }
 
 @keyframes marquee {
-  to { transform: translateX(-50%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* ===== Sections ===== */
