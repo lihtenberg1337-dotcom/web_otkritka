@@ -146,8 +146,9 @@
                 свечи на котором можно задуть через микрофон.
               </p>
               <div class="card__actions">
-                <a class="btn btn--ghost" href="https://lihtenberg1337-dotcom.github.io/pozdravlenie/"
-                   target="_blank" rel="noopener noreferrer">Смотреть демо</a>
+                <button class="btn btn--ghost" type="button"
+                        data-demo="https://lihtenberg1337-dotcom.github.io/pozdravlenie/"
+                        data-demo-title="Тёплый праздник">Смотреть демо</button>
                 <button class="btn btn--soft" type="button" data-choose="500">Выбрать</button>
               </div>
             </div>
@@ -177,8 +178,9 @@
                 и падающие сердечки.
               </p>
               <div class="card__actions">
-                <a class="btn btn--ghost" href="https://lihtenberg1337-dotcom.github.io/love-card/"
-                   target="_blank" rel="noopener noreferrer">Смотреть демо</a>
+                <button class="btn btn--ghost" type="button"
+                        data-demo="https://lihtenberg1337-dotcom.github.io/love-card/"
+                        data-demo-title="Любовь и романтика">Смотреть демо</button>
                 <button class="btn btn--soft" type="button" data-choose="600">Выбрать</button>
               </div>
             </div>
@@ -207,8 +209,9 @@
                 Для друзей: убегающая кнопка подарка, мини-игра и салют из мемов.
               </p>
               <div class="card__actions">
-                <a class="btn btn--ghost" href="https://lihtenberg1337-dotcom.github.io/web_prikol/"
-                   target="_blank" rel="noopener noreferrer">Смотреть демо</a>
+                <button class="btn btn--ghost" type="button"
+                        data-demo="https://lihtenberg1337-dotcom.github.io/web_prikol/"
+                        data-demo-title="Угарный прикол">Смотреть демо</button>
                 <button class="btn btn--soft" type="button" data-choose="500">Выбрать</button>
               </div>
             </div>
@@ -329,6 +332,45 @@
       </div>
     </div>
   </footer>
+
+  <!-- DEMO PREVIEW MODAL -->
+  <div class="demo-modal" id="demoModal" hidden>
+    <div class="demo-modal__backdrop" data-demo-close aria-hidden="true"></div>
+
+    <div class="demo-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="demoTitle">
+      <div class="demo-modal__bar">
+        <div class="demo-modal__info">
+          <span class="demo-modal__eyebrow">Предпросмотр шаблона</span>
+          <h2 class="demo-modal__title" id="demoTitle">Тёплый праздник</h2>
+        </div>
+
+        <div class="demo-modal__modes" role="group" aria-label="Режим просмотра">
+          <button class="mode-btn is-active" type="button" data-mode="phone" aria-pressed="true">
+            📱 Телефон (390px)
+          </button>
+          <button class="mode-btn" type="button" data-mode="desktop" aria-pressed="false">
+            💻 Компьютер (100%)
+          </button>
+        </div>
+
+        <div class="demo-modal__actions">
+          <button class="btn btn--primary btn--sm" type="button" id="demoOrder">
+            Заказать этот шаблон
+          </button>
+          <button class="demo-modal__close" type="button" id="demoClose" aria-label="Закрыть предпросмотр">
+            <span aria-hidden="true">✕</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="demo-modal__stage">
+        <div class="demo-modal__frame-wrap is-phone">
+          <iframe id="demoFrame" title="Предпросмотр открытки" src=""
+                  allow="microphone; autoplay; fullscreen"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
